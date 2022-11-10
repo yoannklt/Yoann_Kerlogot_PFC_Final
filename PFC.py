@@ -15,73 +15,73 @@
         #Sinon si play est égal à "non"
             #Alors play est faux (False)
 
-        #Créer computerChoice une variable et lui associer le retour d'execution de la fonction random
-        #Si computerChoice est égal à 1
-            #Alors computerChoice est égal à "Ciseaux"
-        #Sinon si computerChoice est égal à 2
-            #Alors computerChoice est égal à "Pierre"
-        #Sinon computerChoice est égal à "Feuille"
+    #Créer computerChoice une variable et lui associer le retour d'execution de la fonction random
+    #Si computerChoice est égal à 1
+        #Alors computerChoice est égal à "Ciseaux"
+    #Sinon si computerChoice est égal à 2
+        #Alors computerChoice est égal à "Pierre"
+    #Sinon computerChoice est égal à "Feuille"
 
-        #Tant que play est vraie (True)
-            #Créer playerChoice une variable et lui associer le retour d'execution de la fonction input("(P)ierre/(F)euille/(C)iseaux")
-            #Si playerChoice est égal à "P" ou "p" 
-                #Alors playerChoice est égal à "Pierre"
-            #Sinon si playerChoice est égal à "F" ou "f" 
-                #Alors playerChoice est égal à "Feuille"
-            #Sinon playerChoice est égal à "Ciseaux"
+    #Tant que play est vraie (True)
+        #Créer playerChoice une variable et lui associer le retour d'execution de la fonction input("(P)ierre/(F)euille/(C)iseaux")
+        #Si playerChoice est égal à "P" ou "p" 
+            #Alors playerChoice est égal à "Pierre"
+        #Sinon si playerChoice est égal à "F" ou "f" 
+            #Alors playerChoice est égal à "Feuille"
+        #Sinon playerChoice est égal à "Ciseaux"
 
-            #Si playerChoice est égal à computerChoice 
-                #Alors afficher playerChoice + "VS .." + computerChoice
-                #Afficher "Egalité"
-                #Afficher score
-            #Sinon si playerChoice est égal à "Pierre" ET computerChoice est égal à "Ciseaux"
-                #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
-                #Afficher la concatenation de  nickname + "gagne"
-                #Incrémenter playerPoints de 1
-                #Afficher score
-            #Sinon si playerChoice est égal à "Feuille" ET computerChoice est égal à "Pierre"
-                #Alors afficher playerChoice + "VS .." + computerChoice
-                #Afficher la concatenation de  nickname + "gagne"
-                #Incrémenter playerPoints de 1
-                #Afficher score
-            #Sinon si playerChoice est égal à "Ciseaux" ET computerChoice est égal à "Feuille"
-                #Alors afficher  la concatenation de playerChoice + "VS .." + computerChoice
-                #Afficher la concatenation de  nickname + "gagne"
-                #Incrémenter playerPoints de 1
-                #Afficher score
+        #Si playerChoice est égal à computerChoice 
+            #Alors afficher playerChoice + "VS .." + computerChoice
+            #Afficher "Egalité"
+            #Afficher score
+        #Sinon si playerChoice est égal à "Pierre" ET computerChoice est égal à "Ciseaux"
+            #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
+            #Afficher la concatenation de  nickname + "gagne"
+            #Incrémenter playerPoints de 1
+            #Afficher score
+        #Sinon si playerChoice est égal à "Feuille" ET computerChoice est égal à "Pierre"
+            #Alors afficher playerChoice + "VS .." + computerChoice
+            #Afficher la concatenation de  nickname + "gagne"
+            #Incrémenter playerPoints de 1
+            #Afficher score
+        #Sinon si playerChoice est égal à "Ciseaux" ET computerChoice est égal à "Feuille"
+            #Alors afficher  la concatenation de playerChoice + "VS .." + computerChoice
+            #Afficher la concatenation de  nickname + "gagne"
+            #Incrémenter playerPoints de 1
+            #Afficher score
 
-            #Si playerChoice est égal à "Pierre" ET computerChoice est égal à "Feuille"
-                #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
-                #Afficher "L'ordinateur gagne"
-                #Incrémenter computerPoints de 1
-                #Afficher score
-            #Sinon si playerChoice est égal à "Feuille" ET computerChoice est égal à "Ciseaux"
-                #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
-                #Afficher "L'ordinateur gagne"
-                #Incrémenter computerPoints de 1
-                #Afficher score
-            #Sinon si playerChoice est égal à "Ciseaux" ET computerChoice est égal à "Pierre"
-                #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
-                #Afficher "L'ordinateur gagne"
-                #Incrémenter computerPoints de 1
-                #Afficher score
+        #Si playerChoice est égal à "Pierre" ET computerChoice est égal à "Feuille"
+            #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
+            #Afficher "L'ordinateur gagne"
+            #Incrémenter computerPoints de 1
+            #Afficher score
+        #Sinon si playerChoice est égal à "Feuille" ET computerChoice est égal à "Ciseaux"
+            #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
+            #Afficher "L'ordinateur gagne"
+            #Incrémenter computerPoints de 1
+            #Afficher score
+        #Sinon si playerChoice est égal à "Ciseaux" ET computerChoice est égal à "Pierre"
+            #Alors afficher la concatenation de  playerChoice + "VS .." + computerChoice
+            #Afficher "L'ordinateur gagne"
+            #Incrémenter computerPoints de 1
+            #Afficher score
                 
-            #Si playerPoints est égal à 3
-                #Alors afficher la concatenation de "Vous avez gagné" + nickname
-                #Afficher score
-                #Créer replay une variable et lui associer le retour d'exécution de la fonction input("Rejouer, (o)ui/(n)on : ")
-                    #Si replay est égal à "O" ou "o"
-                        #Alors continuer la boucle
-                    #Sinon casser la boucle
-            #Sinon computerPoints est égal à 3
-                #Alors afficher "L'ordinateur est gagnant !"
-                #Afficher score
-                #Créer replay une variable et lui associer le retour d'exécution de la fonction input("Rejouer, (o)ui/(n)on : ")
-                    #Si replay est égal à "O" ou "o"
-                        #Alors continuer la boucle
-                    #Sinon casser la boucle
+        #Si playerPoints est égal à 3
+            #Alors afficher la concatenation de "Vous avez gagné" + nickname
+            #Afficher score
+            #Créer replay une variable et lui associer le retour d'exécution de la fonction input("Rejouer, (o)ui/(n)on : ")
+                #Si replay est égal à "O" ou "o"
+                    #Alors continuer la boucle
+                #Sinon casser la boucle
+        #Sinon computerPoints est égal à 3
+            #Alors afficher "L'ordinateur est gagnant !"
+            #Afficher score
+            #Créer replay une variable et lui associer le retour d'exécution de la fonction input("Rejouer, (o)ui/(n)on : ")
+                #Si replay est égal à "O" ou "o"
+                    #Alors continuer la boucle
+                #Sinon casser la boucle
                     
-        #Afficher "D'accord à la prochaine !"        
+    #Afficher "D'accord à la prochaine !"        
             
             
 #Exécuter pierreFeuilleCiseaux() 
